@@ -1,0 +1,92 @@
+@import 'mixins';
+
+.wrapper {
+  display:  flex;
+}
+
+.main-panel{
+  transition:   $transition-base;
+  .panel-content {
+    margin:       $navbar-height;
+    margin-top:   $navbar-height *2;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .sidebar-panel {
+    width:  $sidebar-width-lg;
+  }
+  .main-panel {
+    width:  calc(100% - #{$sidebar-width-lg});
+    .panel-content {
+      margin:       $navbar-height / 2;
+      margin-top:   $navbar-height  + 20px;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .sidebar-panel  {
+    width: $sidebar-mini-width-md;
+  }
+  .main-panel {
+    width: calc(100% - #{$sidebar-mini-width-md});
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .sidebar-panel{
+    width: 0;
+  }
+  .main-panel{
+    width: 100%;
+  }
+}
+
+.my-card
+{
+    position:absolute;
+    left:40%;
+    top:-20px;
+    border-radius:50%;
+}
+
+tbody.collapse.in {
+    display: table-row-group;
+  }
+
+table .collapse.in {
+	display:table-row;
+	colur: black;
+	background-color: white;
+  display: table;
+  width: 100%;
+  text-align: center;
+  display: table-cell;
+}
+.border-warning1
+{
+    color:      #ed1556;
+    border-color:  #ed1556;
+}
+.tried {
+  //white-space:normal !important;
+  //word-wrap: break-word;
+  top:-1px;
+  background-color: white;
+  color: #341293;
+  border: 1px solid #341293;
+  padding-left: 2px;
+  //padding:15px 42px;
+  height: 120px;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  width: 310px;
+}
+.try{
+  display:table-row;
+  colur: black;
+  background-color: white;
+
+}
