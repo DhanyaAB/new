@@ -1,0 +1,105 @@
+<div class="border-warning1">
+      <div class="fluid-container">
+        <div class="row">
+
+      <div class="col-lg-12 col-sm-2">
+        <h4 class="mt-1">PolyLogyx_Sanity_Test_Suite</h4>
+
+          <h5 class="mt-1">Summary Information</h5>
+              <table bgcolor="white" width=80% >
+                <thead class="thead-light">
+                  <tr>
+                    <th>Status: </th>
+                    <td>hi</td>
+                  </tr>
+                  <tr>
+                    <th>Start Time:</th>
+                  </tr>
+                  <tr>
+                    <th>End Time:</th>
+                  </tr>
+                  <tr>
+                    <th>Elapsed Time:</th>
+                  </tr>
+                  <tr>
+                    <th>Log File:</th>
+
+                  </tr>
+              </thead>
+            </table>
+          <h4 class="mt-1">Test Statistics</h4>
+           <table class="table-bordered " bgcolor="white" width=80%>
+            	<thead class="thead-light">
+                  <tr>
+                    <th align="centre">Total Statistics </th>
+                    <th align="centre">Total</th>
+                    <th align="centre">Pass</th>
+                    <th align="centre">Fail</th>
+                    <th align="centre">Elapsed</th>
+                    </tr>
+                </thead>
+              <ng-container *ngFor="let value of data">
+                    <tbody>
+                      <tr (click)="value.expanded = !value.expanded">
+                        <td>{{value.stats}}</td>
+                        <td>{{value.Total}}</td>
+                        <td>{{value.Pass }}</td>
+                        <td>{{value.Fail}}</td>
+                        <td>{{value.Elapsed }}</td>
+                      </tr>
+
+                  </tbody>
+              </ng-container>
+          </table>
+          <h4 class="mt-1"></h4>
+          <table class="table-bordered " bgcolor="white" width=80%>
+            	<thead class="thead-light">
+                  <tr>
+                    <th align="centre">Statistics by Tag </th>
+                    <th align="centre">Total</th>
+                    <th align="centre">Pass</th>
+                    <th align="centre">Fail</th>
+                    <th align="centre">Elapsed</th>
+                    </tr>
+                </thead>
+              <ng-container *ngFor="let value of data1">
+                    <tbody>
+                      <tr >
+                        <td>{{value.stats1}}</td>
+                        <td>{{value.Total1}}</td>
+                        <td>{{value.Pass1 }}</td>
+                        <td>{{value.Fail1}}</td>
+                        <td>{{value.Elapsed1 }}</td>
+                      </tr>
+
+                  </tbody>
+              </ng-container>
+          </table>
+          <h4 class="mt-1"></h4>
+          <table class="table-bordered " bgcolor="white" width=80%>
+            	<thead class="thead-light">
+                  <tr>
+                    <th align="centre">Statistics by suite</th>
+                    <th align="centre">Total</th>
+                    <th align="centre">Pass</th>
+                    <th align="centre">Fail</th>
+                    <th align="centre">Elapsed</th>
+                    </tr>
+                </thead>
+              <ng-container *ngFor="let value of data2">
+                    <tbody>
+                      <tr >
+                        <td>{{value.stats2}}</td>
+                        <td>{{value.Total2}}</td>
+                        <td>{{value.Pass2 }}</td>
+                        <td>{{value.Fail2}}</td>
+                        <td>{{value.Elapsed2 }}</td>
+                      </tr>
+
+                  </tbody>
+              </ng-container>
+          </table>
+      </div>
+  </div>
+</div>
+</div>
