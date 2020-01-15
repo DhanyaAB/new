@@ -28,7 +28,8 @@
                         <td>{{value.total}}</td>
                         <td>{{value.time2}}</td>
                         <td>{{value.result}}</td>
-                        <td><a [routerLink]="['/dash/report', value.build]">report.html</a></td>
+                        <!-- <td><a [routerLink]="['/dash/report', value.build]">report.html</a></td> -->
+                        <td><a [routerLink]="['/dash/iframe',value.build]">report.html</a></td>
                       </tr>
                      </tbody>
               </ng-container>

@@ -10,7 +10,8 @@ const routes: Routes = [
   { path:'jenkin' , loadChildren:'./dashboard/dashboard.module#DashboardModule'},
   { path:'test1' , loadChildren:'./dashboard/dashboard.module#DashboardModule'},
   { path:'test2' , loadChildren:'./dashboard/dashboard.module#DashboardModule'},
-  { path:'test3' , loadChildren:'./dashboard/dashboard.module#DashboardModule' }
+  { path:'test3' , loadChildren:'./dashboard/dashboard.module#DashboardModule' },
+  { path:'iframe' , loadChildren:'./dashboard/dashboard.module#DashboardModule' }
 
   ];
 

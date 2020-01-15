@@ -7,6 +7,7 @@ import { JenkinComponent } from '../jenkin/jenkin.component';
 import { History2Component } from '../history2/history2.component';
 import { History3Component } from '../history3/history3.component';
 import { Rep1Component } from '../rep1/rep1.component';
+import { IframeComponent } from '../iframe/iframe.component';
 
 
 const routes: Routes = [
@@ -19,6 +20,7 @@ const routes: Routes = [
       { path:'test1' , component: History2Component },
       { path:'test2' , component: History3Component },
       { path:'report/:build' , component: Rep1Component },
+      { path:'iframe/:build' , component:IframeComponent}
   ]},
 
 ];

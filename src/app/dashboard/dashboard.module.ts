@@ -14,6 +14,7 @@ import { JenkinComponent } from '../jenkin/jenkin.component';
 import { History2Component } from '../history2/history2.component';
 import { History3Component } from '../history3/history3.component';
 import { Rep1Component } from '../rep1/rep1.component';
+import { IframeComponent } from '../iframe/iframe.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { Rep1Component } from '../rep1/rep1.component';
     JenkinComponent,
     History2Component,
     History3Component,
-    Rep1Component
+    Rep1Component,
+    IframeComponent
 
   ]
 })
