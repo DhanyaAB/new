@@ -12,7 +12,7 @@ export class SidebarComponent {
   sidebarItems = [
     {link: '/t1', label: 'Dashboard', icon: 'dashboard'},
     {label: 'Enterprise Edition', icon:'', subItem:[
-      {link:'/', label: 'Version 1.17', icon:''},
+      {link:'/dash', label: 'Version 1.17', icon:''},
       {link: '/t2', label: 'Version 1.18', icon: ''}
     ]},
     {label: 'Community Edition', icon:'', subItem:[

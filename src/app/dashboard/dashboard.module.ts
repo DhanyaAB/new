@@ -14,7 +14,6 @@ import { JenkinComponent } from '../jenkin/jenkin.component';
 import { History2Component } from '../history2/history2.component';
 import { History3Component } from '../history3/history3.component';
 import { Rep1Component } from '../rep1/rep1.component';
-import { LoginComponent } from '../login/login.component';
 
 
 @NgModule({
@@ -36,9 +35,7 @@ import { LoginComponent } from '../login/login.component';
     JenkinComponent,
     History2Component,
     History3Component,
-    Rep1Component,
-    LoginComponent
-
+    Rep1Component
 
   ]
 })
