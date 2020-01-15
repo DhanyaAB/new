@@ -15,6 +15,7 @@ import { History2Component } from '../history2/history2.component';
 import { History3Component } from '../history3/history3.component';
 import { Rep1Component } from '../rep1/rep1.component';
 import { IframeComponent } from '../iframe/iframe.component';
+import { Rep2Component } from '../rep2/rep2.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { IframeComponent } from '../iframe/iframe.component';
     History2Component,
     History3Component,
     Rep1Component,
-    IframeComponent
+    IframeComponent,
+    Rep2Component 
 
   ]
 })

@@ -11,7 +11,9 @@ const routes: Routes = [
   { path:'test1' , loadChildren:'./dashboard/dashboard.module#DashboardModule'},
   { path:'test2' , loadChildren:'./dashboard/dashboard.module#DashboardModule'},
   { path:'test3' , loadChildren:'./dashboard/dashboard.module#DashboardModule' },
-  { path:'iframe' , loadChildren:'./dashboard/dashboard.module#DashboardModule' }
+  { path:'iframe' , loadChildren:'./dashboard/dashboard.module#DashboardModule' },
+  { path:'report2' , loadChildren:'./dashboard/dashboard.module#DashboardModule' },
+  { path:'report' , loadChildren:'./dashboard/dashboard.module#DashboardModule' }
 
   ];
 
